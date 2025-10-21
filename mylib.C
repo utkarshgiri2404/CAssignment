@@ -1,12 +1,8 @@
 #include <stdio.h>
-//1st code
-/*
-void isArmstrong(){
+#include "mylib.h"
+int isArmstrong(int,num){
 	int count,num,t,cnt,result=0,mul,rem;
-	num=t;
-	printf("enter a number to check Armstrong\n");
-	scanf("%d",&t);
-//counting digits.		
+	num=t;	
 	while(t>0){
 		t=t/10;
 		count++;	
@@ -14,68 +10,67 @@ void isArmstrong(){
 	cnt=count;
 	result=0;
 	t=num;	
-//	deriving last digit.
+	0
 	while(t!=0){
 		mul = 1;
 		rem=t%10;
-//multiplying digit no. of times.
+
 		while(cnt !=0){
 			mul=mul*rem;
 			cnt--;
 		}
-//adding all the digits.
+
 		t=t/10;	
 		result =result+mul;
 		cnt=count;
+	}t=num;
+	return(result==num);
 	}
-	t=num;
-	if(result == num){
-		printf("this is a armstrong number");
-	}
-	else{
-		printf("this is not armstrong");
-	}
-}
-//2nd code
-void isPrimePalindrome(){
+
+int isPrimePalindrome(int,N){
 
 	int N,i,isprime , reversed=0,remainder,original;
 original= N;
 
-	printf("enter a number to give Prime palindrome\n");// prime number code.
-	scanf("%d",&N);
 	for(i=2;i*i<=N;i++){
 		if(N%i==0){
 		 isprime = 1;
-		break;
+		return 0;
 		}
+		return 1;
 	}
 if(isprime = 1){
-// palindrome code 
+
 	while(N!=0){
 	remainder = N%10;
 	reversed = reversed*10+remainder;
 	N/=10;
 	}
-}
-	if(original==reversed && isprime==1){
-	printf("this is a primepalindrome");	
-	}
-	else 
-	printf("this is not a primepalindrome ");
-
-}*/
-
-
-int main(){
-//	isArmstrong();
-//	isPrimePalindrome();
-
 	return 0;
 }
 
+}
 
 
+int isAdam(int,num){
 
+    int num, temp, sq, rev = 0, revNumber = 0, squareRev, rem;
 
+    sq=num*num;
 
+    temp = num;
+    while (temp != 0) {
+        rem = temp % 10;
+        revNumber = revNumber * 10 + rem;
+        temp /= 10;
+    }
+    squareRev = revNumber*revNumber;
+
+    temp = squareRev;
+    while (temp != 0) {
+        rem = temp % 10;
+        rev = rev* 10 + rem;
+        temp=temp/10;
+}
+
+}
